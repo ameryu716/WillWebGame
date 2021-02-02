@@ -44,6 +44,7 @@ header h1 {
     color: crimson;
     font-weight: bold;
     margin: 20px auto;
+    line-height: 1.5;
 }
 
 .gamelist-header {
