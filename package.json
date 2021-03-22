@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildscss": "sass --style=compressed darkadd.scss:darkadd.css"
+  },
+  "dependencies": {
+    "tsc": "^1.20150623.0"
+  }
+}
