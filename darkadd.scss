@@ -1,0 +1,494 @@
+.monly {
+	display: none;
+}
+/* header */
+.header-wrapper {
+	z-index: 9;
+    position: relative;
+}
+/* アーカイブページ */
+.archive article {
+	padding: 0;
+	.entry-container {
+		margin: 0;
+		.entry-summary {
+			margin-left: 10px;
+		}
+	}
+	.post-thumbnail .cat-links {
+		padding: 15px 25px 0;
+	}
+	.cat-links a {
+		background: none;
+	  	color: mediumseagreen;
+	  	font-size: 16px;
+		&:before {
+			content: "\f07c";
+			display: inline-block;
+			height: 100%;
+			width: 10px;
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			margin-right: 15px;
+			color: #eef;
+		}
+	}
+
+}
+
+/* aboutページ	 */
+#primary h2 {
+	position: relative;
+	padding-left: 10px;
+	&:before {
+		content: "";
+		display: block;
+		height: 100%;
+		width: 5px;
+		background-color: seagreen;
+		position: absolute;
+		left: 0;
+	}
+	&.h2beforeblue {
+		padding-left: 15px;
+		font-size: 3.5rem;
+		&:before {
+			background-color: lightskyblue;
+			width: 8px;
+		}
+	}
+}
+
+
+.abouthead-p {
+	font-size: 2rem;
+    color: #ddd;
+}
+.wp-block-separator.is-style-wide {
+	border-style: solid;
+}
+
+h2#game-showpage-head {
+	text-align: left;
+	font-size: 32px;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+	border-bottom: solid 1px cadetblue;
+}
+
+.page-id-2 .wp-block-button.spr-btn .wp-block-button__link{
+	border-color: mediumspringgreen;
+  color: mediumspringgreen;
+  font-size: 20px;
+  border-style: solid;
+  padding: 20px;
+  text-decoration: underline;
+}
+#primary h2#game-showpage-head:before {
+	content: none;
+	width:0;
+	height:0;
+	display:inline;
+}
+
+
+main #post-21 a.wp-block-button__link {
+	font-size: 14px;
+}
+.wp-block-media-text__content {
+	position: relative;
+}
+.gamedetailread {
+	position: absolute;
+    bottom: -15%;
+    right: 5%;
+    font-size: 18px;
+}
+
+
+
+
+/* greentryangleadd */
+#main-nav {
+	position: relative;
+	display: none;
+}
+.switchtryangle {
+	width: 50px;
+    height: 43.4px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: lawngreen;
+    transform-origin: 50% 66%;
+    transition: 0.5s;
+    animation: menutryangle 5s ease-in-out infinite;
+    z-index: 1;
+}
+.switchtryangle-innerdiv {
+	width: inherit;
+    height: inherit;
+    clip-path: polygon(50% 6%, 4% 96%, 96% 96%);
+    background-color: #23282d;
+}
+@keyframes menutryangle {
+	0% {
+		transform: scale(1) rotateZ(0deg);
+	}
+	30% {
+		transform: scale(1) rotateZ(108deg);
+	}
+	40% {
+		transform: scale(1.5) rotateZ(144deg);
+	}
+	50% {
+		transform: scale(1) rotateZ(180deg);
+	}
+	80% {
+		transform: scale(1) rotateZ(288deg);
+	}
+	90% {
+		transform: scale(1.5) rotateZ(324deg);
+	}
+	100% {
+		transform: scale(1) rotateZ(360deg);
+	}
+}
+.morestring {
+	position: absolute;
+    right: 13px;
+    top: 15px;
+    color: lawngreen;
+    transform-origin: 60%;
+	transition: 0.5s;
+	animation: morestrscaling 5s ease-in-out infinite;
+	z-index: 2;
+	cursor: pointer;
+}
+@keyframes morestrscaling {
+	0% {
+		transform: scale(0.8);
+	}
+	30% {
+		transform: scale(0.8);
+	}
+	40% {
+		transform: scale(1.3);
+	}
+	50% {
+		transform: scale(0.8);
+	}
+	80% {
+		transform: scale(0.8);
+	}
+	90% {
+		transform: scale(1.3);
+	}
+	100% {
+		transform: scale(0.8);
+	}
+}
+
+// リンクリスト
+.linklist {
+    width: fit-content;
+    right: 0;
+    top: 60px;
+    position: absolute;
+    padding: 0;
+    background-color: #23282dd1;
+	overflow: hidden;
+	height: 0px;
+	width: 200px;
+	transition: 0.5s;
+	&:before {
+		content: "";
+		display: block;
+		height: 3px;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: lawngreen;
+	}
+	&:after {
+		content: "";
+		display: block;
+		height: 3px;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background-color: mediumspringgreen;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	li {
+		border-bottom: solid 1px dimgray;
+		padding: 10px 5px 0 5px;
+	}
+	a {
+		display: flex;
+		transition: 0.3s;
+		&:hover:before {
+			content: "";
+			display: block;
+			background-image: url("./trla10.svg");
+			background-repeat: no-repeat;
+			height: 20px;
+			width: 20px;
+			margin-right: 5px;
+			margin-top: 2px;
+			position: absolute;
+			left: -25px;
+		}
+		&:hover {
+			opacity: 0.9;
+			transform: translateX(20px);
+			display: block;
+			color: #fff;
+			text-decoration: underline;
+		}
+	}
+
+}
+
+.navswitcher {
+	width: 70px;
+    height: 60px;
+    position: absolute;
+    right: -60px;
+    top: 0;
+	z-index: 3;
+}
+
+#custom-r-menu {
+	height: 104vh;
+	width: 30vw;
+	top: 0vh;
+	display: block;
+	transition: 0.3s;
+	left: unset;
+	right: -30.5vw;
+	position: fixed;
+	border-bottom: solid 3px mediumseagreen;
+	border-left: solid 3px mediumseagreen;
+	background: rgba(39,38,42,0.9);
+	font-size: 16px;
+	color: #fff;
+	border-radius: 0 0 0 100px;
+	z-index: 10;
+	h2 {
+		margin: 10px;
+		font-family: "";
+		line-height: 1.5;
+	}
+	ul {
+		padding: 0;
+		overflow-y: scroll;
+		height: 90vh;
+		margin: 16px 0 0 0;
+		width: 32vw;
+	}
+	li {
+		list-style: none;
+		&:first-child a {
+			border-top: solid 1px #f1f1f1;
+		}
+	}
+	a {
+		display: block;
+		padding: 12px 10px 12px 20px;
+		border-bottom: 1px dotted #f1f1f1;
+		font-weight: 500;
+		font-size: 16px;
+		letter-spacing: 0.5px;
+		box-sizing: border-box;
+		text-decoration: none;
+	}
+	
+}
+#swipe {
+	height: 30px;
+	width: 30px;
+	border-radius: 100% 0 0 100%;
+	border: solid mediumspringgreen 2px;
+	position: absolute;
+	left: -35px;
+	background: transparent;
+	top: 30px;
+	border-right: none;
+	box-sizing: content-box;
+	button {
+		background: transparent;
+		border: none;
+		font-size: 24px;
+		color: #fff;
+		padding: 2px 8px;
+		margin: 0;
+    	line-height: 1.2;
+	}
+}
+
+#nav-c-switch {
+	position: fixed;
+	display: flex;
+	background: rgba(0,0,0,0.6);
+	bottom: 50px;
+	color: mediumseagreen;
+	line-height: 1.2;
+	padding: 23px 3px;
+	right: 32px;
+	text-align: center;
+	z-index: 11;
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	span{
+		font-size: 18px;
+		margin: 7px 2px;
+	}
+	i{
+		font-size: 36px;
+	}
+}
+
+/* スマホのみ */
+@media only screen and (max-width: 767px){
+	.monly {
+		display: block;
+	}
+	.ponly {
+		display: none;
+	}
+	/* ヘッダー	 */
+	header {
+		.container {
+			padding:0;
+		}
+		.site-description {
+			margin: 10px 0;
+		} 
+	}
+	.site-title a, .site-title a:visited {
+		color: springgreen;
+	}
+	#page {
+		position: relative;
+		z-index: 1;
+	}
+	/* 	menu */
+	.right-head {
+			float: none;
+			clear: none;
+			width: 22%;
+			position: absolute;
+			left: 0;
+			top: 0;
+	}
+	#primary-menu-toggle {
+		background: transparent;
+		font-size: 5vw;
+		padding: 0 5px;
+		margin-top: 0;
+		color: lawngreen;
+		i {
+			transition: 0.3s;
+		}
+	}
+	.site-primary-menu.toggled-on {
+		width: 100vw;
+		height: 0;
+		top: 45px;
+		overflow: hidden;
+		transition: 0.5s;
+	}
+	#site-header-menu {
+		height: 0;
+		overflow: hidden;
+		width: 100vw;
+		top: 50px;
+		display: block;
+    	transition: 0.3s;
+	}
+	/* タイトル */
+	.home #custom-header .page-title {
+			font-size: 8vw;
+	}
+
+	/* 記事本文 */
+	.entry-content-wrapper{
+			padding: 10px 10px 40px;
+	}
+	#primary {
+		padding-left:0;
+		padding-right:0;
+	}
+	.entry-content-wrapper {
+		padding:0;
+	}
+	.entry-content {
+		padding: 40px 10px;
+	}
+	.wp-block-media-text {
+		grid-template-columns: 35%;
+		.wp-block-media-text__content {
+			padding-right: 10px;
+		}
+		&.has-media-on-the-right {
+			grid-template-columns: 65%
+		}
+		&.has-media-on-the-right .wp-block-media-text__content {
+			padding-left: 10px;
+		}
+
+	}
+	
+	div.wp-block-button a.wp-block-button__link {
+		font-size: 1em;
+	}
+	.gamedetailread {
+		margin-left: 60%;
+    	margin-top: 5%;
+		position: relative;
+		bottom: unset;
+		right: unset;
+		font-size: 15px;
+		a {
+			color: dodgerblue;
+		}
+	}
+
+
+	#custom-r-menu {
+		width: 70vw;
+		right: -70.5vw;
+		ul{
+			width: 70vw;
+		}
+	}
+	#nav-c-switch {
+		padding: 27px 7px;
+		span{
+			font-size: 4.5vw;
+			margin: 4px;
+		}
+		i{
+			font-size: 8vw;
+		}
+	}
+
+	
+	
+	/* ゲームページ */
+	
+	.page-id-21 #recent-comments-2,.page-id-2 #recent-comments-2{
+		display:none;
+	}
+	
+	/* ゲームページ */
+}
